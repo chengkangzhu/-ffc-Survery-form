@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survery Form</title>
+  <link rel='stylesheet' type='text/css' href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <div id="container">
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  
+  <form id="survey-form">
+    <!-- section one -->
+    <section id='section-one'>
+      <label id="name-label">Name<input placeholder="John" type="text" id="name" required/></label>
+      <label id="email-label" >Email<input placeholder="Email" id="email" type="email" required/></label>
+      <label id="number-label">Age<small> (optional)</small><input placeholder ="Age" id="number" type="number"/ min="12" max="30"></label>
+      <p>Which option best describes your current role</p>
+      <select id="dropdown">
+        <option hidden>Select recurrent role</option>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer not to say</option>
+        <option>Other</option>
+      </select>
+    </section>
+    <!-- section two -->
+    <section id='section-two'>
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <div class="box">
+        <label><input type='radio' name="recommend" value="definately" />Definately</label>
+        <label><input type='radio' name="recommend" value="maybe" />Maybe</label>
+        <label><input type='radio' name="recommend" value="not sure" />Not sure</label>
+      </div>
+      <p>What is your favorite feature of freeCodeCamp?</p>
+      <select>
+        <option hidden>Select a option</option>
+        <option>Challenges</option>
+        <option>Projects</option>
+        <option>Community</option>
+        <option>Open Source</option>
+      </select>
+    </section>
+    <!-- section three -->
+    <section id='section-three'>
+      <p>What would you like to see improved? <small>(Check all that apply)</small></p>
+      <div class='box'>
+        <label><input type="checkbox" value="1">Front-end Projects</label>
+        <label><input type="checkbox" value="2">Back-end Projects</label>
+        <label><input type="checkbox" value="3">Data Visualization</label>
+        <label><input type="checkbox" value="4">Open Source Community</label>
+        <label><input type="checkbox" value="5">Gitter help rooms</label>
+        <label><input type="checkbox" value="6">Videos</label>
+        <label><input type="checkbox" value="7">City Meetups</label>
+        <label><input type="checkbox" value="8">Wiki</label>
+        <label><input type="checkbox" value="9">Forum</label>
+        <label><input type="checkbox" value="1">Additional Courses</label>
+      </div>
+      <p>Any comments or suggestions?</p>
+      <textarea id="textarea" rows='5' placeholder="Enter your comment here"></textarea>
+      <button id="submit">Submit</button>
+    </section>
+  </div>
+</body>
+</html>
